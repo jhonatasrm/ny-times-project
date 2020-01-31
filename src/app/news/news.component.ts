@@ -26,7 +26,7 @@ export class NewsComponent implements OnInit {
   }
 
   /* Atribui os valores buscados na API para o array scienceNews e define isLoadingResultsFromTechnology
-  como false para ocultar a classe loading-spinner
+  como false para ocultar a classe spinner
   */ 
   listScienceNews(){
     this.newsService.getNewsScience()
@@ -39,7 +39,7 @@ export class NewsComponent implements OnInit {
   }
 
   /* Atribui os valores buscados na API para o array technologyNews e define isLoadingResultsFromTechnology
-  como false para ocultar a classe loading-spinner
+  como false para ocultar a classe spinner
   */ 
  listTechnologyNews(){
     this.newsService.getNewsTechnology()

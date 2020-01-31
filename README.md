@@ -31,7 +31,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 A escolha da forma de exibição do conteúdo, assim como a solução encontrada para recuperar e apresentar os dados vindos da API, bem como o uso de um evento de click para depois poder enviar os dados para o modal foram baseadas em experiência própria, no conhecimento atual que tenho do Angular e na busca por soluções criativas.
 
 - Inicialmente foi utilizado o framework Bootstrap para ajudar na criação do visual pelo motivo de ter mais experiência com ele, sendo que também foram utilizados alguns elementos do HTML5 e também o SCSS.
-- Para fazer a busca na API foi usado o mesmo service (news.service.ts) para a categoria “Sciences” e também para a “Technology”.
+- Para fazer a requisição na API foi utilizado o HttpClient.
+- A resquisição na API foi feita no mesmo service (news.service.ts) para a categoria “Sciences” e também para a “Technology”.
 - Dentro do news.component.ts foram utilizadas duas funções (listScienceNews(), listTechnologyNews()) no ngOnInit() que ao inicializar carregam as informações da API tanto da categoria “Sciences” como “Technology” em diferentes arrays (scienceNews e technologyNews).
 - Dentro do HTML de news (news.component.html) foram apresentadas as informações armazenadas dentro dos arrays.
 - Dentro do próprio news.component.ts é feito o controle  para visualizar se as informações foram completamente carregadas nas categorias “Sciences” e “Technology”, se caso sim a classe spinner (barra de progresso) é removida exibindo assim os dados de forma mais fluída.
