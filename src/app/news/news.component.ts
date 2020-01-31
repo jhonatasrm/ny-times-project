@@ -14,8 +14,8 @@ export class NewsComponent implements OnInit {
   isLoadingResultsFromScience: boolean = true 
   isLoadingResultsFromTechnology: boolean = true  
 
-  scienceNews = []
-  technologyNews = []
+  scienceNews =  new Array()
+  technologyNews = new Array()
 
   constructor(private newsService: NewsService) {}
 
@@ -29,25 +29,25 @@ export class NewsComponent implements OnInit {
   como false para ocultar a classe loading-spinner
   */ 
   listScienceNews(){
-    this.newsService.getScienceArticles()
+    this.newsService.getNewsScience()
       .subscribe(res => {
-        this.scienceNews = res
+        this.scienceNews = res['response']
         this.isLoadingResultsFromScience = false
-        }, err => {
-        this.isLoadingResultsFromScience = false
-        });
+      }, err => {
+      this.isLoadingResultsFromScience = false
+    });
   }
 
   /* Atribui os valores buscados na API para o array technologyNews e define isLoadingResultsFromTechnology
-    como false para ocultar a classe loading-spinner
+  como false para ocultar a classe loading-spinner
   */ 
-  listTechnologyNews(){
-    this.newsService.getTechnologyArticles()
+ listTechnologyNews(){
+    this.newsService.getNewsTechnology()
       .subscribe(res => {
-        this.technologyNews = res
+        this.technologyNews = res['response']
         this.isLoadingResultsFromTechnology = false
-      }, err => {
-        this.isLoadingResultsFromTechnology = false
+       }, err => {
+       this.isLoadingResultsFromTechnology = false
     });
   }
 

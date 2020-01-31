@@ -6,17 +6,16 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class NewsService {
-  scienceURL: string = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=science/response/docs&api-key=GLFaugbVyCdsj61jzn9wJkllgZhVeXRy'
-  technologyURL: string = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=technology&api-key=GLFaugbVyCdsj61jzn9wJkllgZhVeXRy'
-
-  constructor(private http: HttpClient) { }
+  API_KEY = 'GLFaugbVyCdsj61jzn9wJkllgZhVeXRy'
   
-  getScienceArticles(){
-    return this.http.get<any[]>(`${this.scienceURL}`)
+  constructor(private http: HttpClient) {}
+
+  getNewsScience(){
+    return this.http.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=science&api-key=${ this.API_KEY }`)
   }
 
-  getTechnologyArticles(){
-    return this.http.get<any[]>(`${this.technologyURL}`)
+  getNewsTechnology(){
+    return this.http.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=technology&api-key=${ this.API_KEY }`)
   }
 
 }

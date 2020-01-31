@@ -3,7 +3,7 @@
       <div class="col-md-6 distance-panels-mobile">
           <h3 class="panel-title">Science</h3>
           <div *ngIf="isLoadingResultsFromScience" class="spinner"></div>
-          <div *ngFor="let news of scienceNews.response.docs">
+          <div *ngFor="let news of scienceNews.docs">
             <section class="distance-between-articles">
                 <h6>{{ news.headline.main }}</h6>
                 <app-modal></app-modal>
@@ -16,7 +16,7 @@
       <div class="col-md-6 distance-panels-mobile">
         <h3 class="panel-title">Technology</h3>
         <div *ngIf="isLoadingResultsFromTechnology" class="spinner"></div>
-          <div *ngFor="let news of technologyNews.response.docs">
+          <div *ngFor="let news of technologyNews.docs">
             <section class="distance-between-articles">
                 <h6>{{ news.headline.main }}</h6>
                 <!-- através do envento de click no "Read more..." são enviadas as informações de título, descrição, autor e endereço original do artigo -->
