@@ -1,4 +1,4 @@
-# NyTimesProject
+# New York Times Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
@@ -35,7 +35,7 @@ A escolha da forma de exibição do conteúdo, assim como a solução encontrada
 - Dentro do news.component.ts foi utilizado o ngOnInit() que ao inicializar carrega as informações da API tanto da categoria “Sciences” como “Technology” em diferentes arrays.
 - Dentro do HTML de news foram apresentadas as informações armazenadas dentro dos arrays.
 - Dentro do próprio news.component.ts é feito o controle  para visualizar se as informações foram completamente carregadas nas categorias “Sciences” e “Technology” se caso sim a classe load-spinner é removida exibindo assim os dados de forma mais fluída.
-- Foi utilizado o NgbModal que é um dos widgets do bootstrap para  apresentar o modal.
+- Foi utilizado o NgbModal que é um dos widgets do Bootstrap para  apresentar o modal.
 - Para recuperar os valores do artigo quando clicado em "Read more..." foi utilizado um evento de click que faz uso de uma função em news.component.ts que envia para o modal.component.ts, então o mesmo faz uso das informações para popular o modal.
 
 Muito obrigado
