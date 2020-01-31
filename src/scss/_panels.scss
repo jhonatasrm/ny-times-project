@@ -1,4 +1,5 @@
 $position-absolute: absolute;
+$position-relative: relative;
 $margin-auto: auto;
 $display-block: block;
 $style-border-line: inset;
@@ -67,7 +68,7 @@ hr {
   height: $width-height-spinner;
   animation: $spin-animation;
   left: $middle-spinner * 2;
-  position: $position-absolute;
+  position: $position-relative;
   margin-top: $middle-spinner;
   margin-bottom: $middle-spinner;
 }
