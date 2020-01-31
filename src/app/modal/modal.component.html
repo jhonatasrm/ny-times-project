@@ -1,0 +1,13 @@
+<ng-template #modal let-modal>
+	<div class="modal-header">
+		<h5 class="modal-title" id="modal-basic-title">{{ this.title }}</h5>
+		<button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+		<div class="modal-body">
+			<p class="author-modal">{{ this.author }}</p>
+			<p>{{ this.description }}</p>
+			<a class="link-modal" href="{{ this.address }}" target="_blank">{{ this.address }}</a>
+		</div>
+</ng-template>

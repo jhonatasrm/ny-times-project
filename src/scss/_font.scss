@@ -1,0 +1,21 @@
+$bold: bold;
+
+$text-justify: justify;
+
+$distance-top-section: -10px;
+
+$white: #FFFFFF;
+
+.font-menu {
+  font-weight: $bold;
+  color: $white;
+}
+
+p, h5 {
+  text-align: $text-justify;
+}
+
+h6 {
+  margin-top: $distance-top-section;
+  text-align: $text-justify;
+}

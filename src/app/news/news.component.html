@@ -1,0 +1,29 @@
+<div class="container distance-panels-from-top">
+  <div class="row">
+      <div class="col-md-6 distance-panels-mobile">
+          <h3 class="panel-title">Science</h3>
+          <div *ngIf="isLoadingResultsFromScience" class="spinner"></div>
+          <div *ngFor="let news of scienceNews.response.docs">
+            <section class="distance-between-articles">
+                <h6>{{ news.headline.main }}</h6>
+                <app-modal></app-modal>
+                <!-- através do envento de click no "Read more..." são enviadas as informações de título, descrição, autor e endereço original do artigo -->
+                <a href="#" class="article-link" (click)="this.openModal(news.headline.main, news.abstract, news.byline.original, news.web_url)" *ngIf="!isLoadingResultsFromScience">Read more...</a>
+              </section>
+              <hr *ngIf="!isLoadingResultsFromScience"> <!-- somente apresenta as linhas depois de ter carregado os itens -->
+          </div>
+    </div>
+      <div class="col-md-6 distance-panels-mobile">
+        <h3 class="panel-title">Technology</h3>
+        <div *ngIf="isLoadingResultsFromTechnology" class="spinner"></div>
+          <div *ngFor="let news of technologyNews.response.docs">
+            <section class="distance-between-articles">
+                <h6>{{ news.headline.main }}</h6>
+                <!-- através do envento de click no "Read more..." são enviadas as informações de título, descrição, autor e endereço original do artigo -->
+                <a href="#" class="article-link" (click)="this.openModal(news.headline.main, news.abstract, news.byline.original, news.web_url)">Read more...</a>
+            </section>
+            <hr>
+      </div>
+    </div>
+</div>
+</div>

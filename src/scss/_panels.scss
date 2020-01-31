@@ -1,0 +1,78 @@
+$position-absolute: absolute;
+$margin-auto: auto;
+$display-block: block;
+$style-border-line: inset;
+
+$direction-right-distance: 0%;
+$middle-spinner: 20%;
+$radius-border: 50%;
+
+$blue: #0E4C92;
+$white: #FFFFFF;
+
+$distance: 12px;
+$border-lines: 1px;
+$article-right-distance: 17px;
+$width-height-spinner: 60px;
+$distance-panel-mobile: 10px;
+$distance-from-top: 68px;
+$article-bottom-distance: 10px;
+$size-spinner-border: 8px;
+
+$align-center: center;
+$link-pointer: pointer;
+$spin-animation: spin 700ms linear infinite;
+$spinner-border: $size-spinner-border solid $blue;
+$spinner-border-top: $size-spinner-border * 2 solid $white;
+
+.article-link {
+  margin: $margin-auto;
+  position: $position-absolute;
+  margin-bottom: $article-bottom-distance;
+  right: $article-right-distance;
+  cursor: $link-pointer;
+  color: $blue;
+}
+
+.distance-between-articles {
+  padding: $distance;
+}
+
+.distance-panels-from-top {
+  margin-top: $distance-from-top;
+}
+
+.panel-title {
+  background: $blue;
+  color: $white;
+  text-align: $align-center;
+}
+
+.distance-panels-mobile {
+  margin-top: $distance-panel-mobile;
+}
+
+hr {
+  display: $display-block;
+  overflow: $border-lines;
+  border-style: $style-border-line;
+  border-width: $border-lines;
+}
+
+.spinner {
+  border: $spinner-border;
+  border-top: $spinner-border-top;
+  border-radius: $radius-border;
+  width: $width-height-spinner;
+  height: $width-height-spinner;
+  animation: $spin-animation;
+  left: $middle-spinner * 2;
+  position: $position-absolute;
+  margin-top: $middle-spinner;
+  margin-bottom: $middle-spinner;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(-360deg)}
+}

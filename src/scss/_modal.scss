@@ -1,0 +1,15 @@
+$font-size-modal: 0.8em;
+
+$author-margin-top: -10px;
+
+$gray: #615f5f;
+
+.link-modal {
+    font-size: $font-size-modal;
+}
+
+.author-modal {
+    font-size: $font-size-modal; 
+    color: $gray; 
+    margin-top: $author-margin-top;
+}
