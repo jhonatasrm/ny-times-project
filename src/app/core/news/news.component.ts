@@ -1,11 +1,11 @@
-import { ModalComponent } from './../modal/modal.component';
-import { NewsService } from './../news.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 
+import { ModalComponent } from '../../shared/components/ny_modal/ny_modal.component';
+import { NewsService } from '../../news.service';
+
 @Component({
-  selector: 'app-news',
-  templateUrl: './news.component.html',
-  styleUrls: ['./news.component.scss']
+  selector: 'ny-news',
+  templateUrl: './news.component.html'
 })
 
 export class NewsComponent implements OnInit {

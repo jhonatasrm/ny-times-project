@@ -11,14 +11,15 @@ $radius-border: 50%;
 $blue: #0E4C92;
 $white: #FFFFFF;
 
-$distance: 15px;
+$distance: 30px;
 $border-lines: 1px;
 $article-right-distance: 17px;
 $width-height-spinner: 60px;
 $distance-panel-mobile: 10px;
-$distance-from-top: 68px;
+$distance-from-top: 80px;
 $article-bottom-distance: 10px;
 $size-spinner-border: 8px;
+$opacity-button: 0.7;
 
 $align-center: center;
 $link-pointer: pointer;
@@ -35,7 +36,7 @@ $spinner-border-top: $size-spinner-border * 2 solid $white;
   color: $blue;
 }
 
-.distance-between-articles {
+.button-modal {
   padding: $distance;
 }
 
@@ -71,6 +72,21 @@ hr {
   position: $position-relative;
   margin-top: $middle-spinner;
   margin-bottom: $middle-spinner;
+}
+
+.button-modal a {
+  background-color:$blue;
+  color: $white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.button-modal a:hover {
+  opacity: $opacity-button;
 }
 
 @keyframes spin {

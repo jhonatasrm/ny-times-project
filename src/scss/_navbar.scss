@@ -1,3 +1,24 @@
 .nav-style {
   background: $blue;
+  height: 60px;
+}
+
+.nav-brand {
+  color: $white;
+  font-size: 1.6rem;
+}
+
+.nav-brand:hover {
+  color: $white;
+  text-decoration: none;
+}
+
+
+// logo centro da barra de menu em screens <= 768px
+@media screen and (max-width: 768px){
+  #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

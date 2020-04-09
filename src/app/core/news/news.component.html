@@ -4,11 +4,11 @@
           <h3 class="panel-title">Science</h3>
           <div *ngIf="isLoadingResultsFromScience" class="spinner"></div>
           <div *ngFor="let news of scienceNews.docs">
-            <section class="distance-between-articles">
+            <section class="button-modal">
                 <h6>{{ news.headline.main }}</h6>
-                <app-modal></app-modal>
+                <ny-modal></ny-modal>
                 <!-- através do envento de click no "Read more..." são enviadas as informações de título, descrição, autor e endereço original do artigo -->
-                <a href="#" class="article-link" (click)="this.openModal(news.headline.main, news.abstract, news.byline.original, news.web_url)" *ngIf="!isLoadingResultsFromScience">Read more...</a>
+                <a href="#" class="article-link" (click)="this.openModal(news.headline.main, news.abstract, news.byline.original, news.web_url)" *ngIf="!isLoadingResultsFromScience">Read more</a>
               </section>
               <hr *ngIf="!isLoadingResultsFromScience"> <!-- somente apresenta as linhas depois de ter carregado os itens -->
           </div>
@@ -17,10 +17,10 @@
         <h3 class="panel-title">Technology</h3>
         <div *ngIf="isLoadingResultsFromTechnology" class="spinner"></div>
           <div *ngFor="let news of technologyNews.docs">
-            <section class="distance-between-articles">
+            <section class="button-modal">
                 <h6>{{ news.headline.main }}</h6>
                 <!-- através do envento de click no "Read more..." são enviadas as informações de título, descrição, autor e endereço original do artigo -->
-                <a href="#" class="article-link" (click)="this.openModal(news.headline.main, news.abstract, news.byline.original, news.web_url)">Read more...</a>
+                <a href="#" class="article-link" (click)="this.openModal(news.headline.main, news.abstract, news.byline.original, news.web_url)">Read more</a>
             </section>
             <hr>
       </div>
