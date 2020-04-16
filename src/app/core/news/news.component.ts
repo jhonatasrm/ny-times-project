@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 
 import { ModalComponent } from '../../shared/components/ny_modal/ny_modal.component';
-import { NewsService } from '../../news.service';
+import { NewsService } from '../../services/news.service';
 
 @Component({
   selector: 'ny-news',

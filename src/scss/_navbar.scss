@@ -13,12 +13,7 @@
   text-decoration: none;
 }
 
-
-// logo centro da barra de menu em screens <= 768px
-@media screen and (max-width: 768px){
-  #logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+#logo {
+  display: flex;
+  justify-content: center;
 }

@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { NewsComponent } from './news.component';
-import { NewsService } from '../../news.service';
+import { NewsService } from '../services/news.service';
 
 describe('NewsComponent', () => {
   let component: NewsComponent;

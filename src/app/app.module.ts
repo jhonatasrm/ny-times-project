@@ -1,4 +1,3 @@
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
@@ -7,10 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalModule } from 'ngx-bootstrap/modal';
 
-import { NewsService } from './news.service';
 import { NYModalModule } from './shared/components/ny_modal/ny_modal.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { NewsService } from './services/news.service';
 
 @NgModule({
   declarations: [AppComponent],
