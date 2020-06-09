@@ -22,10 +22,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
 ## Mais informações
 
 A escolha da forma de exibição do conteúdo, assim como a solução encontrada para recuperar e apresentar os dados vindos da API, bem como o uso de um evento de click para depois poder enviar os dados para o modal foram baseadas em experiência própria, no conhecimento atual que tenho do Angular e na busca por soluções criativas.
